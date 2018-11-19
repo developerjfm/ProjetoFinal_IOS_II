@@ -5,33 +5,20 @@
 //  Created by Josimar  Fiuza Melo on 18/11/18.
 //  Copyright © 2018 com.iesb. All rights reserved.
 //
-
-import Realm
+import Foundation
 import RealmSwift
 
 class PerfilController {
     
-    var filtro: String = ""
+    let realm:Realm = try! Realm()
     
-    func quantidadeDeLojas() -> Int {
-        do {
-            if filtro == "" {
-                return try Realm().objects(Loja.self).count
-            }
-            return try Realm().objects(Loja.self).filter(filtro).count
-        } catch {
-            return 0
-        }
+    func obterUsuario(email:String, senha: String)-> Usuario{
+        
+        let predicate = NSPredicate(format: "email = %@ AND senha = %@", email, senha)
+        let user1 = Usuario(value: realm.objects(Usuario.self).filter(predicate))
+        
+        return user1
     }
-    
-    func buscarLojas(comNome searchText: String) {
-        if searchText == "" {
-            filtro = ""
-            return
-        }
-        filtro = "nome CONTAINS[cd] '" + searchText + "'"
-    }
-    
     
 }
 

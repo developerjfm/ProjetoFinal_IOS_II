@@ -29,13 +29,16 @@ class LoginTableViewController: UITableViewController {
         usuario.senha = txtSenha.text!
         
         let login = loginController.login(email: usuario.email , senha: usuario.senha)
-        //        let obterUsuario = loginController.obterUsuario(email: usuario.email , senha: usuario.senha)
-        //        print("Obtendo Usuario\(obterUsuario)")
+        let obterUsuario = loginController.obterUsuario(email: usuario.email , senha: usuario.senha)
+        print("Obtendo Usuario\(obterUsuario)")
         
         if validacao == true {
             if login == true {
                 let perfil: PerfilTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "Perfil") as! PerfilTableViewController
                 self.navigationController?.pushViewController(perfil, animated: true)
+                
+                perfil.email = usuario.email
+                perfil.senha = usuario.senha
                 
             } else {
                 alertaValidacaoCampos(titulo: "", message: "Email ou Senha incorretos")

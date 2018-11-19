@@ -16,7 +16,11 @@ class BuscaFavoritosController {
     func selectDasOutrasTelas() {
         do {
             let favoritos = try Realm().objects(Favorito.self)
+            print(favoritos[0].lojas)
+            print(favoritos[0].lojas[0].nome)
             let usuario = try Realm().objects(Usuario.self)
+            print(usuario[0].email)
+            print(usuario[0].senha)
         } catch {
             print("erro")
         }

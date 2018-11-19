@@ -13,17 +13,28 @@ class PerfilTableViewController: UITableViewController {
     var email : String = ""
     var senha : String = ""
     
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var txtNome: UILabel!
+    @IBOutlet weak var txtEmail: UILabel!
+    @IBOutlet weak var txtTelefone: UILabel!
+    @IBOutlet weak var qtdLista: UILabel!
+    
+    let controller = PerfilController()
     let numeroCelulas = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let usuario = controller.obterUsuario(email: email, senha: senha)
+        
+        imagem.image = UIImage(named: usuario.foto)
+        txtNome.text = usuario.nome
+        txtEmail.text = usuario.email
+        txtTelefone.text = usuario.telefone
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return  numeroCelulas
     }
-    
-    
-    
 }
