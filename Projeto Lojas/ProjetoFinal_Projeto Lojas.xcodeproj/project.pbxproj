@@ -18,6 +18,7 @@
 		BCF11B3421A1F92C0060FA4F /* DetalheFavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B3321A1F92C0060FA4F /* DetalheFavoritoTableViewCell.swift */; };
 		BCF11B3621A200D00060FA4F /* DetalheLojaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B3521A200D00060FA4F /* DetalheLojaTableViewController.swift */; };
 		BCF11B3821A200E10060FA4F /* DetalheLojaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B3721A200E10060FA4F /* DetalheLojaTableViewCell.swift */; };
+		BCF11B4221A25F540060FA4F /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B4121A25F540060FA4F /* PerfilTableViewCell.swift */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A42141E1DD006FCEE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A22141E1DD006FCEE4 /* Main.storyboard */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
@@ -51,8 +52,9 @@
 		BCF11B3321A1F92C0060FA4F /* DetalheFavoritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheFavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		BCF11B3521A200D00060FA4F /* DetalheLojaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLojaTableViewController.swift; sourceTree = "<group>"; };
 		BCF11B3721A200E10060FA4F /* DetalheLojaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLojaTableViewCell.swift; sourceTree = "<group>"; };
+		BCF11B4021A248090060FA4F /* ProjetoFinal_Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjetoFinal_Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF11B4121A25F540060FA4F /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
 		F1E3A1412749FC08E36F47DB /* Pods-ProjetoFinal_Projeto Lojas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoFinal_Projeto Lojas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoFinal_Projeto Lojas/Pods-ProjetoFinal_Projeto Lojas.release.xcconfig"; sourceTree = "<group>"; };
-		F50B809B2141E1DD006FCEE4 /* ProjetoFinal_Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "ProjetoFinal_Projeto Lojas.app"; path = "/Users/josimarfiuzamelo/Desenvolvimento/Trabalho_Final_IOS_II/ProjetoFinalIOS_II_Corrigido/ProjetoFinal_IOS_II/Projeto Lojas/build/Debug-iphoneos/ProjetoFinal_Projeto Lojas.app"; sourceTree = "<absolute>"; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A32141E1DD006FCEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F50B80A52141E1DF006FCEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				F50B809D2141E1DD006FCEE4 /* Projeto Lojas */,
 				FAC8DD63CD597674E6B482F7 /* Pods */,
 				DDB470CEFE7A9E9FE549A5D8 /* Frameworks */,
+				BCF11B4021A248090060FA4F /* ProjetoFinal_Projeto Lojas.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +156,7 @@
 				F5B8BFCF215D833F00A2708C /* LoginTableViewController.swift */,
 				F5B8BFD1215D836700A2708C /* PerfilViewController.swift */,
 				F50B80B02141EF5D006FCEE4 /* CadastroTableViewController.swift */,
+				BCF11B4121A25F540060FA4F /* PerfilTableViewCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -239,7 +243,7 @@
 			);
 			name = "ProjetoFinal_Projeto Lojas";
 			productName = "Projeto Lojas";
-			productReference = F50B809B2141E1DD006FCEE4 /* ProjetoFinal_Projeto Lojas.app */;
+			productReference = BCF11B4021A248090060FA4F /* ProjetoFinal_Projeto Lojas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -353,6 +357,7 @@
 				BCF11B3021A1F8E70060FA4F /* FavoritoTableViewCell.swift in Sources */,
 				F5338CFB2165A558001C2512 /* Database.swift in Sources */,
 				BCF11B2521A1F7D10060FA4F /* BuscaFavoritosController.swift in Sources */,
+				BCF11B4221A25F540060FA4F /* PerfilTableViewCell.swift in Sources */,
 				F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */,
 				F5B8BFD8215D843D00A2708C /* FavoritoDetalheViewController.swift in Sources */,
 				BCF11B2821A1F82B0060FA4F /* PerfilController.swift in Sources */,

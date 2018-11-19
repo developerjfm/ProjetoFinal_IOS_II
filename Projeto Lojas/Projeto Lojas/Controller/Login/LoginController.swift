@@ -25,11 +25,5 @@ class LoginController {
             return false
         }
     }
-    
-        func obterUsuario(email:String, senha: String)-> Usuario{
-    
-            let predicate = NSPredicate(format: "email = %@ AND senha = %@", email, senha)
-            let user1 = Usuario(value: realm.objects(Usuario.self).filter(predicate))
-            return user1
-        }
+
 }

@@ -7,30 +7,39 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PerfilTableViewController: UITableViewController {
     
     var email : String = ""
     var senha : String = ""
     
-    @IBOutlet weak var imagem: UIImageView!
-    @IBOutlet weak var txtNome: UILabel!
-    @IBOutlet weak var txtEmail: UILabel!
-    @IBOutlet weak var txtTelefone: UILabel!
-    @IBOutlet weak var qtdLista: UILabel!
-    
     let controller = PerfilController()
-    let numeroCelulas = 5
-    var usuario = Usuario()
+    let numeroCelulas = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("++++++++++++++++++++++++\(email)")
-        print(senha)
     }
-    
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  numeroCelulas
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var usuario : Results<Usuario>
+        usuario = controller.obterUsuario(email: email, senha: senha)
+      
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PerfilCell", for: indexPath)
+        
+        if let cellPerfil = cell as? PerfilTableViewCell {
+            
+            
+            return cellPerfil
+        }
+        
+        return cell
+    }
+    
 }
