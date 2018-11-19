@@ -1,13 +1,10 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '12.1'
+# platform :ios, '9.0'
 
-target 'Projeto Lojas' do
+target 'ProjetoFinal_Projeto Lojas' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Projeto Lojas
-#  pod 'IQKeyboardManagerSwift'
-#  pod 'SVProgressHUD'
+  # Pods for ProjetoFinal_Projeto Lojas
   pod 'RealmSwift'
-
 end

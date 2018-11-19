@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Projeto_LojasVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Projeto_LojasVersionString[];
+FOUNDATION_EXPORT double Pods_ProjetoFinal_Projeto_LojasVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ProjetoFinal_Projeto_LojasVersionString[];
 

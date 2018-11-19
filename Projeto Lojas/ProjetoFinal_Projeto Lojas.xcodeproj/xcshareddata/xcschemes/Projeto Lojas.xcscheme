@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "77553912689BCCFDAFFB7E01CE172F54"
-               BuildableName = "RealmSwift.framework"
-               BlueprintName = "RealmSwift"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "F50B809A2141E1DD006FCEE4"
+               BuildableName = "ProjetoFinal_Projeto Lojas.app"
+               BlueprintName = "ProjetoFinal_Projeto Lojas"
+               ReferencedContainer = "container:ProjetoFinal_Projeto Lojas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F50B809A2141E1DD006FCEE4"
+            BuildableName = "ProjetoFinal_Projeto Lojas.app"
+            BlueprintName = "ProjetoFinal_Projeto Lojas"
+            ReferencedContainer = "container:ProjetoFinal_Projeto Lojas.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77553912689BCCFDAFFB7E01CE172F54"
-            BuildableName = "RealmSwift.framework"
-            BlueprintName = "RealmSwift"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "F50B809A2141E1DD006FCEE4"
+            BuildableName = "ProjetoFinal_Projeto Lojas.app"
+            BlueprintName = "ProjetoFinal_Projeto Lojas"
+            ReferencedContainer = "container:ProjetoFinal_Projeto Lojas.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F50B809A2141E1DD006FCEE4"
+            BuildableName = "ProjetoFinal_Projeto Lojas.app"
+            BlueprintName = "ProjetoFinal_Projeto Lojas"
+            ReferencedContainer = "container:ProjetoFinal_Projeto Lojas.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
