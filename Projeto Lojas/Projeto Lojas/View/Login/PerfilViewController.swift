@@ -21,18 +21,14 @@ class PerfilTableViewController: UITableViewController {
     
     let controller = PerfilController()
     let numeroCelulas = 5
+    var usuario = Usuario()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let usuario = controller.obterUsuario(email: email, senha: senha)
-        
-        imagem.image = UIImage(named: usuario.foto)
-        txtNome.text = usuario.nome
-        txtEmail.text = usuario.email
-        txtTelefone.text = usuario.telefone
-        
+        print("++++++++++++++++++++++++\(email)")
+        print(senha)
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  numeroCelulas
