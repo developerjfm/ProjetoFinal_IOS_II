@@ -14,7 +14,7 @@ class LoginController {
     
     let realm:Realm = try! Realm()
     
-    func login(email:String, senha: String)-> Bool{
+    func isValidalogin(email:String, senha: String)-> Bool{
         
         let predicate = NSPredicate(format: "email = %@ AND senha = %@", email, senha)
         let user1 = realm.objects(Usuario.self).filter(predicate)

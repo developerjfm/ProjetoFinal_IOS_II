@@ -13,7 +13,7 @@ class CadastroController{
     
     let realm = try! Realm()
     
-    func gravarUsuario(usuario: Usuario)->Bool{
+    func isAddUsuario(usuario: Usuario)->Bool{
         do {
             try! realm.write {
                 realm.add(usuario)

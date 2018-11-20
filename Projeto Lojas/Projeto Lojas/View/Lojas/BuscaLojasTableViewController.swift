@@ -55,16 +55,16 @@ class BuscaLojasTableViewController: UITableViewController, UISearchBarDelegate 
         return cell
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! DetalheLojaTableViewController
-       
-        let nomeLoja = controller.nomeDaLoja((tableView.indexPathForSelectedRow?.row)!)
-        let logoLoja = UIImage(named: controller.nomeLogoLoja((tableView.indexPathForSelectedRow?.row)!))
-        
-        
-        vc.logo.image = logoLoja
-        vc.nomeLoja.text = nomeLoja
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! DetalheLojaTableViewController
+//
+//        let nomeLoja = controller.nomeDaLoja((tableView.indexPathForSelectedRow?.row)!)
+//        let logoLoja = UIImage(named: controller.nomeLogoLoja((tableView.indexPathForSelectedRow?.row)!))
+//
+//
+//        vc.logo.image = logoLoja
+//        vc.nomeLoja.text = nomeLoja
+//    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160

@@ -37,6 +37,19 @@ class BuscaLojasController {
         }
     }
     
+    func buscarLoja() {
+        
+        do {
+            let loja =  try Realm().objects(Loja.self)
+                        print(loja[0].nome)
+            let produto = try Realm().objects(Produto.self)
+                        print(produto[0].titulo)
+        } catch {
+            print("erro")
+        }
+    }
+    
+    
     func nomeDaLoja(_ index: Int) -> String {
         do {
             if filtro == "" {
@@ -86,6 +99,18 @@ class BuscaLojasController {
     }
     
     func vendeComputadores(_ index: Int) -> Bool {
+        do {
+            if filtro == "" {
+                return try Realm().objects(Loja.self)[index].vendeComputador
+            }
+            let lojaEspecifica = try Realm().objects(Loja.self).filter(filtro)[index]
+            return lojaEspecifica.vendeComputador
+        } catch {
+            return false
+        }
+    }
+    
+    func produto(_ index: Int) -> Bool {
         do {
             if filtro == "" {
                 return try Realm().objects(Loja.self)[index].vendeComputador

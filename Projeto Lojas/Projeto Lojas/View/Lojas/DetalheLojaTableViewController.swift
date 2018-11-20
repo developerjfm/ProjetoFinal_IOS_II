@@ -10,36 +10,36 @@ import UIKit
 
 class DetalheLojaTableViewController: UITableViewController {
 
+    @IBOutlet weak var imagemLogo: UIImageView!
+    @IBOutlet weak var nomeLoja: UILabel!
+    @IBOutlet weak var mapa: UIImageView!
+    
+    let controller = BuscaLojasController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var nomeLoja: UILabel!
-    @IBOutlet weak var mapa: UIImageView!
-    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detalheLojaCell", for: indexPath)
 
-        // Configure the cell...
+        if let cellDetalhe = cell as? DetalheLojaTableViewCell {
+            
+            cellDetalhe.txtNome.text = controller.nomeDaLoja(indexPath.row)
+            cellDetalhe.txtNomeImagemProduto.text = controller.nomeLogoLoja(indexPath.row)
+            
+            return cellDetalhe
+        }
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

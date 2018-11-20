@@ -23,14 +23,14 @@ class LoginTableViewController: UITableViewController {
     
     @IBAction func btEntrar(_ sender: UIButton) {
         
-        let validacao = validaCampos()
+     
         
         usuario.email = txtEmail.text!
         usuario.senha = txtSenha.text!
         
-        let login = loginController.login(email: usuario.email , senha: usuario.senha)
+        let login = loginController.isValidalogin(email: usuario.email , senha: usuario.senha)
         
-        if validacao == true {
+        if validaCampos(){
             if login == true {
                 let perfil: PerfilTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "Perfil") as! PerfilTableViewController
                 perfil.email = usuario.email
@@ -43,7 +43,6 @@ class LoginTableViewController: UITableViewController {
     }
     
     func mensagemSucessoCadastro(titulo:String,message:String) {
-        
         let alerta = UIAlertController(title: titulo, message: message, preferredStyle: UIAlertController.Style.alert)
         alerta.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alerta, animated: true, completion: nil)

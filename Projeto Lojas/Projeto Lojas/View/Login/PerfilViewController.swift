@@ -15,12 +15,11 @@ class PerfilTableViewController: UITableViewController {
     var senha : String = ""
     
     let controller = PerfilController()
-    let numeroCelulas = 1
+    let numeroCelulas = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  numeroCelulas
@@ -28,13 +27,11 @@ class PerfilTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var usuario : Results<Usuario>
-        usuario = controller.obterUsuario(email: email, senha: senha)
-      
         let cell = tableView.dequeueReusableCell(withIdentifier: "PerfilCell", for: indexPath)
         
         if let cellPerfil = cell as? PerfilTableViewCell {
             
+           
             
             return cellPerfil
         }

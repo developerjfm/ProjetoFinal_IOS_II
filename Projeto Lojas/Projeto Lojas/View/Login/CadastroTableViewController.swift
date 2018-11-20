@@ -27,7 +27,7 @@ class CadastroTableViewController: UITableViewController {
             let usuario = Usuario(email: txtEmail.text!, nome: txtNome.text!, foto: "user-logged", senha: txtSenha.text!, telefone: txtTelefone.text!, idade: Int(txtIdade.text!)!,listasFavoritos:listaFavorito,lojasServidor:listaLoja)
             
             print(usuario)
-            let retorno = cadastroController.gravarUsuario(usuario: usuario)
+            let retorno = cadastroController.isAddUsuario(usuario: usuario)
             
             if retorno == true{
                 
@@ -57,6 +57,7 @@ class CadastroTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        
     }
     
     //    @IBAction func fecharCadastro() {
