@@ -20,6 +20,7 @@
 		BCF11B3821A200E10060FA4F /* DetalheLojaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B3721A200E10060FA4F /* DetalheLojaTableViewCell.swift */; };
 		BCF11B4221A25F540060FA4F /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF11B4121A25F540060FA4F /* PerfilTableViewCell.swift */; };
 		BCF482A921A3989400C175B5 /* ArredondarBotao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF482A821A3989400C175B5 /* ArredondarBotao.swift */; };
+		BCFD4D7921A4E6BE00BB2296 /* CriarListaLojaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD4D7821A4E6BE00BB2296 /* CriarListaLojaTableViewCell.swift */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A42141E1DD006FCEE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A22141E1DD006FCEE4 /* Main.storyboard */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		BCF11B4021A248090060FA4F /* ProjetoFinal_Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjetoFinal_Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF11B4121A25F540060FA4F /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
 		BCF482A821A3989400C175B5 /* ArredondarBotao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArredondarBotao.swift; sourceTree = "<group>"; };
+		BCFD4D7821A4E6BE00BB2296 /* CriarListaLojaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarListaLojaTableViewCell.swift; sourceTree = "<group>"; };
 		F1E3A1412749FC08E36F47DB /* Pods-ProjetoFinal_Projeto Lojas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetoFinal_Projeto Lojas.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetoFinal_Projeto Lojas/Pods-ProjetoFinal_Projeto Lojas.release.xcconfig"; sourceTree = "<group>"; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A32141E1DD006FCEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				BCF11B2F21A1F8E70060FA4F /* FavoritoTableViewCell.swift */,
 				BCF11B3121A1F90C0060FA4F /* DetalheFavoritoTableViewController.swift */,
 				BCF11B3321A1F92C0060FA4F /* DetalheFavoritoTableViewCell.swift */,
+				BCFD4D7821A4E6BE00BB2296 /* CriarListaLojaTableViewCell.swift */,
 			);
 			path = Favoritos;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				F5F816AF21545B9C0083FDA2 /* BuscaLojasController.swift in Sources */,
 				BCF11B2A21A1F8500060FA4F /* CadastroController.swift in Sources */,
 				F5338D032165A9E8001C2512 /* Usuario.swift in Sources */,
+				BCFD4D7921A4E6BE00BB2296 /* CriarListaLojaTableViewCell.swift in Sources */,
 				F5B8BFDA215D9CC200A2708C /* Loja.swift in Sources */,
 				F50B80B12141EF5D006FCEE4 /* CadastroTableViewController.swift in Sources */,
 				F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */,

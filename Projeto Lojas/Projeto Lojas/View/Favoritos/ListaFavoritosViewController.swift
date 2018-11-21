@@ -25,27 +25,20 @@ class ListaFavoritoTableViewController: UITableViewController {
         return controller.quantidadeDeLojasFavorito()
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        let vc = segue.destination as! DetalheFavoritoTableViewController
-    //        let detalhe = controller.nomeDaLoja((tableView!.indexPathForSelectedRow?.row)!)
-    //        vc.nomeFavorito = detalhe
-    //    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //let criarLista = tableView.dequeueReusableCell(withIdentifier: "CriarListaLojas", for: indexPath)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Favorito", for: indexPath)
-        
-        // Configure the cell...
-        if let cellFavorito = cell as? FavoritoTableViewCell {
-            
-            cellFavorito.txtNomeLoja.text = controller.nomeDaLoja(indexPath.row)
-            cellFavorito.txtqtdLoja.text = String(controller.quantidadeDeLojas(indexPath.row) )
-            
-            return cellFavorito
+
+        let cellFavorito = tableView.dequeueReusableCell(withIdentifier: "Favorito", for: indexPath)
+
+        if let cell = cellFavorito as? FavoritoTableViewCell {
+                cell.txtNomeLoja.text = controller.nomeDaLoja(indexPath.row)
+                cell.txtqtdLoja.text = String(controller.quantidadeDeLojas(indexPath.row) )
+                
+            return cell
         }
+    
         
-        return cell
+        return  cellFavorito
+
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

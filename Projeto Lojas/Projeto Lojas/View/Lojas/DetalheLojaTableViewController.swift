@@ -14,10 +14,21 @@ class DetalheLojaTableViewController: UITableViewController {
     @IBOutlet weak var nomeLoja: UILabel!
     @IBOutlet weak var mapa: UIImageView!
     
+    var nomeLojaRecebido : String = ""
+    var loja = Loja()
+    
     let controller = BuscaLojasController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loja = controller.obterLoja(nomeLojaRecebido)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imagemLogo.image = UIImage(named: loja.iconeGrande)
+        nomeLoja.text = loja.nome
+        
     }
     
     // MARK: - Table view data source
@@ -31,9 +42,9 @@ class DetalheLojaTableViewController: UITableViewController {
 
         if let cellDetalhe = cell as? DetalheLojaTableViewCell {
             
-            cellDetalhe.txtNome.text = controller.nomeDaLoja(indexPath.row)
-            cellDetalhe.txtNomeImagemProduto.text = controller.nomeLogoLoja(indexPath.row)
-            
+            cellDetalhe.txtNome.text = loja.nome
+            //Add campos ausentes
+       
             return cellDetalhe
         }
 

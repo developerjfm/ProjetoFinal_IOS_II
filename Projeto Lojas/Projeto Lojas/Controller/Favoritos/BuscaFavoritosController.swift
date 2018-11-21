@@ -72,6 +72,8 @@ class BuscaFavoritosController {
     }
     
     
+    
+    
     func nomeLogoLoja(_ index: Int) -> String {
         do {
             if filtro == "" {

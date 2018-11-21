@@ -11,6 +11,16 @@ import Realm
 class BuscaLojasController {
     
     var filtro: String = ""
+    let realm:Realm = try! Realm()
+    
+    func obterLoja(_ nomeLoja:String)-> Loja{
+        
+        let predicate = NSPredicate(format: "nome = %@ ", nomeLoja)
+        let resultado = realm.objects(Loja.self).filter(predicate)
+        
+        return resultado[0]
+    }
+    
     
     func selectDasOutrasTelas() {
         do {
