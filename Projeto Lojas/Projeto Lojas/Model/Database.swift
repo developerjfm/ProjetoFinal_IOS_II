@@ -12,7 +12,7 @@ import RealmSwift
 class Database {
     
     static func preencheDadosIniciais() {
-        
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         if let pathComponent = Realm.Configuration.defaultConfiguration.fileURL {
             if FileManager.default.fileExists(atPath: pathComponent.path) {
                 print("Realm já existe")

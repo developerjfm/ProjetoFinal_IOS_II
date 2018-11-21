@@ -15,11 +15,15 @@ class PerfilTableViewController: UITableViewController {
     var senha : String = ""
     
     let controller = PerfilController()
-    let numeroCelulas = 3
+    let numeroCelulas = 1
+    
+    var usuario = Usuario()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        usuario = controller.obterUsuario(email: email, senha: senha)
     }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  numeroCelulas
@@ -31,8 +35,12 @@ class PerfilTableViewController: UITableViewController {
         
         if let cellPerfil = cell as? PerfilTableViewCell {
             
-           
-            
+            cellPerfil.txtNome.text = usuario.nome
+            cellPerfil.txtEmail.text = usuario.email
+            cellPerfil.txtTelefone.text = usuario.telefone
+            cellPerfil.qtd.text = String("Favoritos: \(usuario.listasFavoritos.count)")
+            cellPerfil.foto.image = UIImage(named: usuario.foto)
+
             return cellPerfil
         }
         

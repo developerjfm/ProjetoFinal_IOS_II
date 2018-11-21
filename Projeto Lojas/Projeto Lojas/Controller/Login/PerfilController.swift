@@ -12,12 +12,12 @@ class PerfilController {
     
     let realm:Realm = try! Realm()
     
-    func obterUsuario(email:String, senha: String)-> Results<Usuario>{
+    func obterUsuario(email:String, senha: String)-> Usuario{
        
         let predicate = NSPredicate(format: "email = %@ AND senha = %@", email, senha)
         let resultado = realm.objects(Usuario.self).filter(predicate)
         
-        return resultado
+        return resultado[0]
     }
     
 }
