@@ -13,8 +13,9 @@ class DetalheLojaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var txtNome: UITextField!
     @IBOutlet weak var txtNomeLoja: UITextField!
-    @IBOutlet weak var txtNomeProduto: UITextField!
-    @IBOutlet weak var txtNomeImagemProduto: UITextField!
+    @IBOutlet weak var txtVideoGame: UITextField!
+    @IBOutlet weak var txtPossuiComputador: UITextField!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

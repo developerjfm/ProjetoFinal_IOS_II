@@ -24,12 +24,9 @@ class BuscaLojasController {
     
     func selectDasOutrasTelas() {
         do {
-            let favoritos = try Realm().objects(Favorito.self)
-            print(favoritos[0].lojas)
-            print(favoritos[0].lojas[0].nome)
-            let usuario = try Realm().objects(Usuario.self)
-            print(usuario[0].email)
-            print(usuario[0].senha)
+            let loja = try Realm().objects(Loja.self)
+            print(loja[0].nome)
+            let produto = try Realm().objects(Produto.self)
         } catch {
             print("erro")
         }

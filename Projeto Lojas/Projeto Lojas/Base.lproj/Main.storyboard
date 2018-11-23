@@ -147,13 +147,13 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nomeProduto" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J40-xf-TCE">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="videoGame" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J40-xf-TCE">
                                             <rect key="frame" x="16" y="97" width="343" height="17"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nomeImagemProduto" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leX-Qu-Dtl">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="computador" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leX-Qu-Dtl">
                                             <rect key="frame" x="16" y="141" width="343" height="17"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -178,9 +178,9 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="txtNome" destination="oKh-LK-R0L" id="xIk-ez-56q"/>
-                                    <outlet property="txtNomeImagemProduto" destination="leX-Qu-Dtl" id="giy-p3-9J1"/>
                                     <outlet property="txtNomeLoja" destination="GxN-b1-pDf" id="I6a-L7-LvD"/>
-                                    <outlet property="txtNomeProduto" destination="J40-xf-TCE" id="5k9-hf-tzi"/>
+                                    <outlet property="txtPossuiComputador" destination="leX-Qu-Dtl" id="ANy-H6-Tv0"/>
+                                    <outlet property="txtVideoGame" destination="J40-xf-TCE" id="ug4-ap-Byz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

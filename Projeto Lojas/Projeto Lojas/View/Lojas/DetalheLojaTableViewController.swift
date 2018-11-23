@@ -28,7 +28,6 @@ class DetalheLojaTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         imagemLogo.image = UIImage(named: loja.iconeGrande)
         nomeLoja.text = loja.nome
-        
     }
     
     // MARK: - Table view data source
@@ -42,8 +41,12 @@ class DetalheLojaTableViewController: UITableViewController {
 
         if let cellDetalhe = cell as? DetalheLojaTableViewCell {
             
-            cellDetalhe.txtNome.text = loja.nome
-            //Add campos ausentes
+            cellDetalhe.txtNomeLoja.text = loja.nome
+            let vg = controller.vendeJogos(indexPath.row) ? "true" : "false"
+            cellDetalhe.txtVideoGame.text = "Loja possui VideoGame: \(vg)"
+            let comp = controller.vendeComputadores(indexPath.row) ? "true" : "false"
+            cellDetalhe.txtPossuiComputador.text = "Loja possui Computadores :\(comp)"
+
        
             return cellDetalhe
         }
